@@ -34,6 +34,9 @@ class Linker implements LinkerBaseInterface
      */
     public function storeLink(string $link): string
     {
+        if (!filter_var($link, FILTER_VALIDATE_URL)) {
+            throw new Exception('Not valid URL');
+        }
         $this->realLink = $link;
 
         $linkExists = $this->getByLink($link);
