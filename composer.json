@@ -1,0 +1,11 @@
+{
+    "name": "idegart/linker",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Idegart",
+            "email": "degtyarev_artem@mail.ru"
+        }
+    ],
+    "require": {}
+}
